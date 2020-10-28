@@ -12,7 +12,6 @@ body {
   font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 100;
-  font-family: Baloo Tammudu 2;
   font-style: normal;
   line-height: 15px;
   }
@@ -23,7 +22,7 @@ body {
   }
 
 .container{
-  max-width: ;
+  width: 100%;
   text-align: center;
 }
 
@@ -47,7 +46,7 @@ header {
 }
 
 nav {
-  width: 60vw;
+  width: 65vw;
 }
 
 nav ul {
@@ -64,7 +63,7 @@ nav ul {
   }
 
 aside {
-  width: 10vw;
+  width: 5vw;
 }
 
   aside ul {
@@ -78,14 +77,52 @@ aside {
      padding-top: 10px;
 }
 
-.categories{
+.categories {
   display:flex;
 
 }
-.categories li{
-  list-style: none;
+  .categories li{
+    list-style: none;
+  }
+
+    .categories a{
+      display:block;
 }
 
-.categories a{
-  display:block;
+.term-cards {
+  margin:15px;
+  padding-top: 25px;
+  max-width: 1612px;
+  height: 380px;
+  display: flex;
+
 }
+.card {
+  margin:15px;
+  padding: 15px;
+  max-width: 508px;
+  height: 380px;
+  background-color: white;
+}
+
+  .card h1{
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    color: #FA4550;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    text-align: left;
+
+  }
+
+  .card p{
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    color: #000C33;
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: left;
+  }
