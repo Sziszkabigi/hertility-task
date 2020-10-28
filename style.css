@@ -16,9 +16,12 @@ body {
   line-height: 15px;
   }
 
-  h1 {
+  .title{
+    text-align: center;
+  }
+  .title h1  {
     font-family: 'Baloo Tammudu 2', cursive;
-    padding-top: 108px;
+    padding-top: 80px;
   }
 
 .container{
