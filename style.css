@@ -23,13 +23,12 @@ body {
 
 .container{
   width: 100%;
-  text-align: center;
+
 }
 
 header {
   color: #0F2135;
   background-color: white;
-  display: flex;
   width: 1920px;
   height: 70px;
   display: flex;
@@ -86,7 +85,7 @@ aside {
   }
 
     .categories a{
-      display:block;
+      display: block;
 }
 
 .term-cards {
@@ -126,3 +125,39 @@ aside {
     font-weight: 100;
     text-align: left;
   }
+footer {
+  max-width: 1920px;
+  margin-top:80px;
+  padding: 20px;
+  background-color: white;
+  margin-left: 0px;
+}
+
+.footer-top{
+  max-width: 1920px;
+  display: inline-flex;
+  padding:10px;
+
+
+
+}
+.hhlogo3 {
+  background: url('https://res.cloudinary.com/dleicsu2y/image/upload/v1603917308/hertility-task/HH_Logo_3_lpnw4p.png')no-repeat center center;
+  max-width :42.04px;
+  height: 40.98px;
+  padding: 40px;
+  margin:0;
+
+}
+.pages {
+  color: #000c33;
+  display: inline-flex;
+  margin
+}
+
+.pages ul {
+  list-style: none;
+  display:flex;
+}
+
+
