@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap');
 
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: #000D33;
@@ -17,7 +17,7 @@ body{
   line-height: 15px;
   }
 
-  h1{
+  h1 {
     font-family: 'Baloo Tammudu 2', cursive;
     padding-top: 108px;
   }
@@ -27,56 +27,63 @@ body{
   text-align: center;
 }
 
-header{
+header {
   color: #0F2135;
   background-color: white;
   display: flex;
-  max-width: 1920px;
-  height: 108px;
+  width: 1920px;
+  height: 70px;
   display: flex;
   align-items: center;
 }
-.logo{
+
+.logo {
   background: url('https://res.cloudinary.com/dleicsu2y/image/upload/v1603893337/hertility-task/hertility-logo_t36ys2.png')no-repeat center center;
-  width: 217px;
+  background-position: cover;
+  max-width: 217px;
   height:57px;
-  width: 25vw;
+  width: 30vw;
   padding-left: 1px;
 }
 
-nav{
-  width: 55vw;
-
+nav {
+  width: 60vw;
 }
-nav ul{
+
+nav ul {
   list-style: none;
   display: flex;
   padding: 0;
   }
-  nav ul li{
-    padding-left:18px;
+  nav ul li {
+    padding-left: 18px;
+    padding-top: 10px;
   }
-  nav ul a{
+  nav ul a {
     display:block;
-
   }
-aside{
-  width: 20vw;
+
+aside {
+  width: 10vw;
 }
 
-aside ul{
-  list-style: none;
-  display: flex;
+  aside ul {
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
   }
-aside ul li{
-padding-left:10px;
-  }
-nav ul a{
-  display:block;
 
+    aside ul li {
+     padding-left: 10px;
+     padding-top: 10px;
 }
+
 .categories{
+  display:flex;
 
+}
+.categories li{
+  list-style: none;
 }
 
 .categories a{
