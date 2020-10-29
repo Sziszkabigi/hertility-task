@@ -77,7 +77,13 @@ aside {
     aside ul li {
      padding-left: 10px;
      padding-top: 10px;
-}
+    }
+      aside img {
+        max-width: 35px;
+        max-height: 31px;
+        padding: 3px;
+        margin-left: 25px;
+      }
 
 .categories {
   display:flex;
@@ -90,6 +96,10 @@ aside {
     .categories a{
       display: block;
 }
+          .categories a img{
+           max-width:100px;
+           max-height:144.5px;
+         }
 
 .term-cards {
   margin:15px;
@@ -105,6 +115,7 @@ aside {
   max-width: 508px;
   height: 380px;
   background-color: white;
+  border-radius: 6px;
 }
 
   .card h1{
@@ -131,7 +142,7 @@ aside {
 footer {
   max-width: 1920px;
   margin-top:80px;
-  padding: 20px;
+  padding: 10px;
   background-color: white;
   margin-left: 0px;
 }
@@ -162,5 +173,57 @@ footer {
   list-style: none;
   display:flex;
 }
+.footer-main{
+  display: flex;
+  justify-content: space-between;
 
+}
+.card-news {
+  color: #000c33;
+  font-size: 8px;
+  padding:15px;
+}
 
+.card-news input{
+  padding: 10px;
+  border:none;
+  border-bottom: solid 1px black;
+}
+#submit img{
+  max-width: 62.5px;
+  max-height: 80px;
+}
+
+.socialmedia {
+  color: #000c33;
+  font-size: 8px;
+  padding:15px;
+  text-align: center
+}
+  .socialmedia ul {
+    list-style: none;
+    display:flex;
+
+    }
+    .socialmedia a {
+     display: block;
+    }
+
+    .socialmedia a img{
+      max-width: 62.5px;
+      max-height: 80px:
+      }
+.footer-bottom{
+  color: #000c33;
+  font-size: 8px;
+}
+  .footer-bottom ul {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+
+  .footer-bottom li {
+      display:inline;
+    }
