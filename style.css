@@ -95,6 +95,10 @@ aside {
 
     .categories a{
       display: block;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      padding-top: 30px;
 }
           .categories a img{
            max-width:100px;
@@ -152,8 +156,6 @@ footer {
   display: inline-flex;
   padding:10px;
 
-
-
 }
 .hhlogo3 {
   background: url('https://res.cloudinary.com/dleicsu2y/image/upload/v1603917308/hertility-task/HH_Logo_3_lpnw4p.png')no-repeat center center;
@@ -165,8 +167,9 @@ footer {
 }
 .pages {
   color: #000c33;
-  display: inline-flex;
-  margin
+  display: flex;
+  justify-content: space-around;
+
 }
 
 .pages ul {
