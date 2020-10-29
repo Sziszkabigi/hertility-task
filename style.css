@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000D33;
+  background-image: url('https://res.cloudinary.com/dleicsu2y/image/upload/v1603998053/hertility-task/Background_1_ikfzfk.png');
   color: #FFFFFF;
   font-family: sofia-pro, sans-serif;
   font-style: normal;
@@ -16,25 +17,16 @@ body {
   line-height: 15px;
   }
 
-  .title{
-    text-align: center;
-  }
-  .title h1  {
-    font-family: 'Baloo Tammudu 2', cursive;
-    padding-top: 80px;
-  }
-
-.container{
+  .container {
   width: 100%;
-
 }
+
 
 header {
   color: #0F2135;
   background-color: white;
-  width: 1920px;
+  max-width: 100%;
   height: 70px;
-  display: flex;
   align-items: center;
 }
 
@@ -45,11 +37,19 @@ header {
   height:57px;
   width: 30vw;
   padding-left: 1px;
+  position: absolute;
 }
 
 nav {
-  width: 65vw;
+  display:flex;
+  justify-content: space-between;
+  padding-left: 220px;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width:
+
 }
+
 
 nav ul {
   list-style: none;
@@ -63,27 +63,22 @@ nav ul {
   nav ul a {
     display:block;
   }
-
-aside {
-  width: 5vw;
-}
-
-  aside ul {
-   list-style: none;
-   display: flex;
-   justify-content: flex-end;
-  }
-
-    aside ul li {
-     padding-left: 10px;
-     padding-top: 10px;
-    }
-      aside img {
+      nav img {
         max-width: 35px;
         max-height: 31px;
         padding: 3px;
         margin-left: 25px;
       }
+
+.title {
+ text-align: center;
+}
+
+.title h1 {
+  font-family: 'Baloo Tammudu 2', cursive;
+  padding-top: 80px;
+}
+
 
 .categories {
   display:flex;
@@ -100,9 +95,9 @@ aside {
       text-align: center;
       padding-top: 30px;
 }
-          .categories a img{
-           max-width:100px;
-           max-height:144.5px;
+        .categories a img{
+          max-width:100px;
+          max-height:144.5px;
          }
 
 .term-cards {
@@ -171,6 +166,10 @@ footer {
   justify-content: space-around;
 
 }
+nav.pages{
+  padding-left: 40px;
+
+}
 
 .pages ul {
   list-style: none;
@@ -185,6 +184,7 @@ footer {
   color: #000c33;
   font-size: 8px;
   padding:15px;
+  padding-left: 40px;
 }
 
 .card-news input{
@@ -201,6 +201,7 @@ footer {
   color: #000c33;
   font-size: 8px;
   padding:15px;
+  padding-right: 40px;
   text-align: center
 }
   .socialmedia ul {
@@ -224,9 +225,9 @@ footer {
     list-style: none;
     display: inline-block;
     vertical-align: middle;
-
   }
 
   .footer-bottom li {
       display:inline;
     }
+
