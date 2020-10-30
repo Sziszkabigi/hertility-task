@@ -28,18 +28,18 @@ header {
   color: #0F2135;
   background-color: white;
   max-width: 100%;
-  height: 70px;
+  height: 60px;
   align-items: center;
 }
 
 .logo {
-  background: url('https://res.cloudinary.com/dleicsu2y/image/upload/v1603893337/hertility-task/hertility-logo_t36ys2.png')no-repeat center center;
-  background-position: cover;
-  max-width: 217px;
-  height:57px;
-  width: 30vw;
-  padding-left: 1px;
-  position: absolute;
+    background: url(https://res.cloudinary.com/dleicsu2y/image/upload/v1603893337/hertility-task/hertility-logo_t36ys2.png)no-repeat center center;
+    background-position: cover;
+    max-width: 240px;
+    height: 57px;
+    width: 25vw;
+    /* padding-left: 1px; */
+    position: absolute;
 }
 
 nav {
@@ -53,9 +53,11 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
+  padding-left: 15px;
   }
+
   nav ul li {
-    padding-left: 18px;
+    padding-right: 18px;
 
   }
   nav ul a {
@@ -65,10 +67,10 @@ nav ul {
         max-width: 35px;
         max-height: 31px;
         padding: 3px;
-        margin-left: 25px;
+        margin-right: 10px;
       }
-.nav-right{
-  padding right: 20px;
+.nav-right {
+  padding right: 10px;
 }
 
 .title {
@@ -77,7 +79,13 @@ nav ul {
 
 .title h1 {
   font-family: 'Baloo Tammudu 2', cursive;
-  padding-top: 80px;
+  padding-top: 20px;
+  font-size: 70px;
+  line-height: 155px;
+  text-align: center;
+}
+.title h2 {
+
 }
 
 
@@ -86,25 +94,22 @@ nav ul {
   display:flex;
   flex-wrap: wrap;
   align-content: stretch;
-  padding-left: 20px;
   justify-content: center;
   align-items: center;
 
 }
-.categories ul {
+  .categories ul {
     list-style: none;
     flex-wrap: wrap;
     padding: 15px;
 
-}
-
   }
-  .categories li{
+
+  .categories li {
     list-style: none;
-
   }
 
-    .categories a{
+    .categories a {
       display: block;
       color: white;
       text-decoration: none;
@@ -131,16 +136,17 @@ nav ul {
 .card {
   margin:15px;
   padding: 15px;
-  max-width: 280px;
+  max-width: 350px;
   height: 300px;
   background-color: white;
   border-radius: 6px;
+  line-height: 15px;
 }
 
-  .card h1{
+  .card h2 {
     font-family: sofia-pro, sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 300;
     color: #FA4550;
     padding-top: 0px;
     padding-bottom: 15px;
@@ -148,7 +154,7 @@ nav ul {
 
   }
 
-  .card p{
+  .card p {
     font-family: sofia-pro, sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -166,7 +172,7 @@ footer {
   margin-left: 0px;
 }
 
-.footer-top{
+.footer-top {
   max-width: 1920px;
   display: inline-flex;
   padding-top: 10px;
@@ -186,7 +192,7 @@ footer {
   justify-content: space-around;
 
 }
-nav.pages{
+nav.pages {
   padding-left: 40px;
 
 }
@@ -195,9 +201,10 @@ nav.pages{
   list-style: none;
   display:flex;
 }
-.footer-main{
+.footer-main {
   display: flex;
   justify-content: space-between;
+  padding-top: 40px;
 
 }
 .card-news {
@@ -208,17 +215,21 @@ nav.pages{
   padding-bottom: 60px;
 }
 
-card-news h1 {
+.card-news h1 {
+  font-family: 'Baloo Tammudu 2', cursive;
+
   margin-bottom: ;
 }
 
-.card-news input{
+.card-news input {
   width: 250px;
   padding: 10px;
   border:none;
   border-bottom: solid 1px black;
+  padding-top: 40px;
+  color: #9FA6AE;
 }
-#submit img{
+#submit img {
   max-width: 62.5px;
   max-height: 80px;
   margin-left: 190px;
@@ -247,7 +258,7 @@ card-news h1 {
       max-width: 62.5px;
       max-height: 80px:
       }
-.footer-bottom{
+.footer-bottom {
   color: #000c33;
   font-size: 11px;
 }
