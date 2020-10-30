@@ -7,8 +7,8 @@
 body {
   margin: 0;
   padding: 0;
+  background: url('https://res.cloudinary.com/dleicsu2y/image/upload/c_scale,w_1802/v1603998053/hertility-task/Background_1_ikfzfk.png') no-repeat center center/cover;
   background-color: #000D33;
-  background-image: url('https://res.cloudinary.com/dleicsu2y/image/upload/v1603998053/hertility-task/Background_1_ikfzfk.png')fixed no-repeat center center;
   color: #FFFFFF;
   font-family: sofia-pro, sans-serif;
   font-style: normal;
@@ -16,11 +16,10 @@ body {
   font-style: normal;
   line-height: 15px;
   max-width: 1920px;
-  }
+}
 
   .container {
   width: 100%;
-
 }
 
 
@@ -80,11 +79,12 @@ nav ul {
 
 .title h1 {
   font-family: 'Baloo Tammudu 2', cursive;
-  padding-top: 20px;
+  padding-top: 40px;
   font-size: 60px;
   line-height: 155px;
   text-align: center;
   padding-bottom: 0;
+  margin: 10px;
 }
 .title h2 {
   padding: 0;
@@ -186,24 +186,26 @@ footer {
 
 .footer-top {
   max-width: 1920px;
-  display: inline-flex;
-  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 .hhlogo3 {
-  background: url('https://res.cloudinary.com/dleicsu2y/image/upload/v1603917308/hertility-task/HH_Logo_3_lpnw4p.png')no-repeat center center;
-  max-width :42.04px;
-  height: 40.98px;
-  padding: 40px;
-  margin:0;
+    position: absolute;
+    background: url(https://res.cloudinary.com/dleicsu2y/image/upload/v1603917308/hertility-task/HH_Logo_3_lpnw4p.png)no-repeat center center;
+    max-width: 42.04px;
+    height: 40.98px;
+    padding: 40px;
+    margin: 0;
+    left: 10px;
 
 }
 .pages {
   color: #000c33;
   display: flex;
-  justify-content: space-around;
-
 }
+
 nav.pages {
   padding-left: 40px;
 
@@ -224,23 +226,24 @@ nav.pages {
   font-size: 8px;
   padding:15px;
   padding-left: 70px;
-  padding-bottom: 60px;
+  padding-bottom: 25px;
+  padding-top:
 }
 
 .card-news h1 {
   font-family: 'Baloo Tammudu 2', cursive;
-
-  margin-bottom: ;
+  margin-bottom: 0;
 }
 
 .card-news input {
   width: 250px;
   padding: 10px;
-  border:none;
+  border: none;
   border-bottom: solid 1px black;
-  padding-top: 40px;
+  padding-top: 25px;
   color: #9FA6AE;
 }
+
 #submit img {
   max-width: 62.5px;
   max-height: 80px;
@@ -249,31 +252,34 @@ nav.pages {
 }
 
 .socialmedia {
-
   color: #000c33;
   font-size: 8px;
   padding:15px;
   padding-right: 70px;
   text-align: center
 }
+
   .socialmedia ul {
     list-style: none;
     display:flex;
 
     }
+
     .socialmedia a {
      display: block;
     }
 
-    .socialmedia a img{
-      margin: 15px;
+    .socialmedia a img {
+      margin: 10px;
       max-width: 62.5px;
       max-height: 80px:
       }
+
 .footer-bottom {
   color: #000c33;
   font-size: 11px;
 }
+
   .footer-bottom ul {
     padding-top: 5px;
     list-style: none;
@@ -289,7 +295,7 @@ max-width: 50%
 }
 
 #spt {
-  padding-left: 300px;
+  padding-left: 350px;
 }
 
 
