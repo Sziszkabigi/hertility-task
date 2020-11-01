@@ -17,13 +17,27 @@ body {
   line-height: 15px;
   max-width: 1920px;
 }
+a{
+  color: #0F2135;
+  border-bottom: none;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:hover{
+  color:#FA4450;
+
+}
 
   .container {
   width: 100%;
+
 }
 
 
 header {
+  position: sticky;
+  top:0;
   color: #0F2135;
   background-color: white;
   max-width: 100%;
@@ -129,10 +143,7 @@ nav ul {
   padding: 0;
   margin: 0;
   font-weight: 300;
-
-
 }
-
 
 .categories {
   max-width: 100%;
@@ -166,6 +177,10 @@ nav ul {
       text-align: center;
       padding-top: 30px;
 }
+
+    .categories a:hover {
+      color: #FA4450;
+    }
         .categories a img{
           max-width: 85px;
 
@@ -280,6 +295,7 @@ nav.pages {
   padding-top: 25px;
   color: #9FA6AE;
 }
+
 
 #submit img {
   max-width: 62.5px;
