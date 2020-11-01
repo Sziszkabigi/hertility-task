@@ -40,13 +40,26 @@ header {
     /* padding-left: 1px; */
     position: absolute;
 }
+@media only screen and (max-width: 1024px) {
+  .logo {
+    left:38%;
+
+  }
+}
 
 nav {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding-left: 220px;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+  display: flex;
+ justify-content: flex-end;
+  }
 }
 
 nav ul {
@@ -70,6 +83,32 @@ nav ul {
       }
 .nav-right {
   padding right: 10px;
+
+}
+.nav-left {
+  display: flex;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-left {
+    display: none;
+  }
+}
+.menu-button {
+  width:10px;
+}
+
+.menu-button span {
+    display: block;
+    width: 80%;
+    border-bottom: solid black 1px;
+}
+}
+@media only screen and (max-width: 1024px) {
+  .mobile-menu {
+    display: flex;
+
+  }
 }
 
 .title {
@@ -134,8 +173,6 @@ nav ul {
 
 .term-cards {
   margin:15px;
-  margin-left: auto;
-
   padding-top: 25px;
   max-width: 1612px;
   height: 380px;
@@ -298,4 +335,120 @@ max-width: 50%
   padding-left: 350px;
 }
 
+@media only screen and (min-width: 1024px) {
+ #menuToggle{
+  display: none;
+ }
+
+}
+@media only screen and (max-width: 1024px) {
+#menuToggle {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  }
+}
+  #menuToggle a {
+    text-decoration: none;
+    color: #000D33;
+
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle a:hover {
+    color: tomato;
+  }
+
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 2px;
+  line-height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #000D33;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* Make this absolute positionedat the top left of the screen*/
+
+#menu {
+  position: absolute;
+  width: 250px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
 
