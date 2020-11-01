@@ -155,10 +155,6 @@ nav ul {
   align-items: center;
 
 }
-.categories p {
-  font-weight: 300;
-  line-height: 30px;
-}
   .categories ul {
     list-style: none;
     flex-wrap: wrap;
@@ -173,9 +169,11 @@ nav ul {
     .categories a {
       display: block;
       color: white;
-      text-decoration: none;
+      font-weight: 400px;
+
       text-align: center;
       padding-top: 30px;
+      text-decoration: none;
 }
 
     .categories a:hover {
