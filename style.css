@@ -17,23 +17,21 @@ body {
   line-height: 15px;
   max-width: 1920px;
 }
-a{
+
+a {
   color: #0F2135;
   border-bottom: none;
   text-decoration: none;
   font-weight: 400;
 }
 
-a:hover{
+a:hover {
   color:#FA4450;
-
 }
 
   .container {
   width: 100%;
-
 }
-
 
 header {
   position: sticky;
@@ -47,7 +45,7 @@ header {
 
 .logo {
     background: url(https://res.cloudinary.com/dleicsu2y/image/upload/v1603893337/hertility-task/hertility-logo_t36ys2.png)no-repeat center center;
-    background-position: cover;
+    background-position: contain;
     max-width: 240px;
     height: 57px;
     width: 25vw;
@@ -146,14 +144,34 @@ nav ul {
 }
 
 .categories {
-  max-width: 100%;
-  padding-top: 40px;
-  display:flex;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: center;
-  align-items: center;
+    overflow-x: auto;
+    max-width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
 
+}
+
+    .categories a {
+      display: block;
+      color: white;
+      font-weight: 400px;
+
+      text-align: center;
+      padding-top: 30px;
+      text-decoration: none;
+}
+ .categories a:hover {
+      color: #FA4450;
+    }
+
+/*.categories a:hover > .img-container .hertility{
+  background-color: #FA4450;
+  background-image:url('https://res.cloudinary.com/dleicsu2y/image/upload/v1604311472/hertility-task/Vector_2_fxrvem.png');
+*/
 }
   .categories ul {
     list-style: none;
@@ -166,32 +184,46 @@ nav ul {
     list-style: none;
   }
 
-    .categories a {
-      display: block;
-      color: white;
-      font-weight: 400px;
+  .categories a .img-container {
+      max-width: 400px;
+      max-height:400px;
+      padding: 20px;
+      background-color:white;
+      border-radius: 50%;
+      margin: 0;
+    }
+    .categories a:hover >.img-container {
+    background-color: #FA4450;
 
-      text-align: center;
-      padding-top: 30px;
-      text-decoration: none;
 }
 
-    .categories a:hover {
-      color: #FA4450;
-    }
-        .categories a img{
-          max-width: 85px;
+.categories a img{
+  max-width: 80px;
+  padding: 3px
+  margin: 0px;
+  background-size: contain;
+  background-color: white;
 
-         }
+}
+.categiries a .img-container #hertility{
+  display:inline-block;
+  max-width: 80px;
+  max-height: 80px;
+  background: transparent url('https://res.cloudinary.com/dleicsu2y/image/upload/v1604319823/hertility-task/Category_Icon_10_aj18um.png')no-repeat 0 0 ;
+}
+
+
 
 .term-cards {
   margin:15px;
   padding-top: 25px;
   max-width: 1612px;
-  height: 380px;
   display: flex;
   justify-content: center;
   align-items: center;
+  display:flex;
+  flex-wrap: wrap;
+  align-content: stretch;
 
 }
 .card {
@@ -212,7 +244,6 @@ nav ul {
     padding-top: 0px;
     padding-bottom: 15px;
     text-align: left;
-
   }
 
   .card p {
@@ -226,6 +257,10 @@ nav ul {
     font-weight: 100;
     text-align: left;
   }
+  .anatomy-content{
+    display:none;
+  }
+
 footer {
   max-width: 1920px;
   margin-top:80px;
@@ -293,7 +328,6 @@ nav.pages {
   padding-top: 25px;
   color: #9FA6AE;
 }
-
 
 #submit img {
   max-width: 62.5px;
@@ -482,5 +516,23 @@ nav.pages {
 
 #menuToggle input:checked ~ ul {
   transform: none;
+}
+ .categories button .img-container {
+      max-width: 400px;
+      max-height:400px;
+      padding: 20px;
+      background-color:white;
+      border-radius: 50%;
+      margin: 0;
+    }
+     .categories button img {
+      max-width: 80px;
+
+
+    }
+
+button.anatomy{
+  max-width: 80px;
+  color:red;
 }
 
