@@ -1,10 +1,30 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap');
 
-* {
-  box-sizing: border-box;
+*{
+box-sizing:border-box;
 }
 
-body {
+/*//colors
+$primary-color:#0DA2D1;
+$white:#fff;*/
+
+@mixin prefix($prefix, $name, $duration){
+  #{$prefix}animation-name:$name;
+  #{$prefix}animation-duration:$duration;
+}
+
+//to notice something heppens
+@keyframes notice{
+  0%{
+    transform:rotate(10deg) scale(1);
+  }
+  100%{
+    transform:rotate(-10deg) scale(1.1);
+  }
+}
+
+body{
   margin: 0;
   padding: 0;
   background: url('https://res.cloudinary.com/dleicsu2y/image/upload/c_scale,w_1802/v1603998053/hertility-task/Background_1_ikfzfk.png') no-repeat center center/cover;
@@ -18,31 +38,22 @@ body {
   max-width: 1920px;
 }
 
-a {
-  color: #0F2135;
-  border-bottom: none;
-  text-decoration: none;
-  font-weight: 400;
-}
+.container{
+  max-width:100%;
+  margin: 0 auto;
+  text-align:left;
 
-a:hover {
-  color:#FA4450;
 }
-
-  .container {
-  width: 100%;
-}
-
+/* for header */
 header {
-  position: sticky;
-  top:0;
+  display:block;
   color: #0F2135;
   background-color: white;
   max-width: 100%;
   height: 60px;
   align-items: center;
+  border-bottom: solid gray 1px;
 }
-
 .logo {
     background: url(https://res.cloudinary.com/dleicsu2y/image/upload/v1603893337/hertility-task/hertility-logo_t36ys2.png)no-repeat center center;
     background-position: contain;
@@ -52,10 +63,16 @@ header {
     /* padding-left: 1px; */
     position: absolute;
 }
+
 @media only screen and (max-width: 1024px) {
   .logo {
     left:38%;
 
+  }
+}
+@media only screen and (max-width: 440px) {
+  .logo {
+    display:none;
   }
 }
 
@@ -72,6 +89,17 @@ nav {
   display: flex;
  justify-content: flex-end;
   }
+}
+
+a {
+  color: #0F2135;
+  border-bottom: none;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:hover {
+  color:#FA4450;
 }
 
 nav ul {
@@ -93,10 +121,17 @@ nav ul {
         padding: 3px;
         margin-right: 10px;
       }
+
 .nav-right {
   padding right: 10px;
 
 }
+@media only screen and (max-width: 440px) {
+  .nav-right ul li:last-child {
+    display:none;
+  }
+}
+
 .nav-left {
   display: flex;
 }
@@ -114,301 +149,12 @@ nav ul {
     display: block;
     width: 80%;
     border-bottom: solid black 1px;
-}
+  }
 }
 @media only screen and (max-width: 1024px) {
   .mobile-menu {
     display: flex;
 
-  }
-}
-
-.title {
- text-align: center;
-
-}
-
-.title h1 {
-  font-family: 'Baloo Tammudu 2', cursive;
-  padding-top: 40px;
-  font-size: 60px;
-  line-height: 155px;
-  text-align: center;
-  padding-bottom: 0;
-  margin: 10px;
-}
-.title h2 {
-  padding: 0;
-  margin: 0;
-  font-weight: 300;
-}
-
-.categories {
-    overflow-x: auto;
-    max-width: 100%;
-    padding-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: center;
-    align-items: center;
-
-}
-
-    .categories a {
-      display: block;
-      color: white;
-      font-weight: 400px;
-
-      text-align: center;
-      padding-top: 30px;
-      text-decoration: none;
-}
- .categories a:hover {
-      color: #FA4450;
-    }
-
-/*.categories a:hover > .img-container .hertility{
-  background-color: #FA4450;
-  background-image:url('https://res.cloudinary.com/dleicsu2y/image/upload/v1604311472/hertility-task/Vector_2_fxrvem.png');
-*/
-}
-  .categories ul {
-    list-style: none;
-    flex-wrap: wrap;
-    padding: 15px;
-
-  }
-
-  .categories li {
-    list-style: none;
-  }
-
-  .categories a .img-container {
-      max-width: 400px;
-      max-height:400px;
-      padding: 20px;
-      background-color:white;
-      border-radius: 50%;
-      margin: 0;
-    }
-    .categories a:hover >.img-container {
-    background-color: #FA4450;
-
-}
-
-.categories a img{
-  max-width: 80px;
-  padding: 3px
-  margin: 0px;
-  background-size: contain;
-  background-color: white;
-
-}
-.categiries a .img-container #hertility{
-  display:inline-block;
-  max-width: 80px;
-  max-height: 80px;
-  background: transparent url('https://res.cloudinary.com/dleicsu2y/image/upload/v1604319823/hertility-task/Category_Icon_10_aj18um.png')no-repeat 0 0 ;
-}
-
-
-
-.term-cards {
-  margin:15px;
-  padding-top: 25px;
-  max-width: 1612px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display:flex;
-  flex-wrap: wrap;
-  align-content: stretch;
-
-}
-.card {
-  margin:15px;
-  padding: 15px;
-  max-width: 350px;
-  height: 300px;
-  background-color: white;
-  border-radius: 6px;
-  line-height: 15px;
-}
-
-  .card h2 {
-    font-family: sofia-pro, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    color: #FA4550;
-    padding-top: 0px;
-    padding-bottom: 15px;
-    text-align: left;
-  }
-
-  .card p {
-    font-family: sofia-pro, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    line-height: 21px;
-    color: #000C33;
-    font-family: sofia-pro, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    text-align: left;
-  }
-  .anatomy-content{
-    display:none;
-  }
-
-footer {
-  max-width: 1920px;
-  margin-top:80px;
-  padding: 10px;
-  background-color: white;
-  margin-left: 0px;
-}
-
-.footer-top {
-  max-width: 1920px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-.hhlogo3 {
-    position: absolute;
-    background: url(https://res.cloudinary.com/dleicsu2y/image/upload/v1603917308/hertility-task/HH_Logo_3_lpnw4p.png)no-repeat center center;
-    max-width: 42.04px;
-    height: 40.98px;
-    padding: 40px;
-    margin: 0;
-    left: 10px;
-
-}
-.pages {
-  color: #000c33;
-  display: flex;
-}
-
-nav.pages {
-  padding-left: 40px;
-
-}
-
-.pages ul {
-  list-style: none;
-  display:flex;
-}
-.footer-main {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-
-}
-.card-news {
-  color: #000c33;
-  font-size: 8px;
-  padding:15px;
-  padding-left: 70px;
-  padding-bottom: 25px;
-  padding-top:
-}
-
-.card-news h1 {
-  font-family: 'Baloo Tammudu 2', cursive;
-  margin-bottom: 0;
-}
-
-.card-news input {
-  width: 250px;
-  padding: 10px;
-  border: none;
-  border-bottom: solid 1px black;
-  padding-top: 25px;
-  color: #9FA6AE;
-}
-
-#submit img {
-  max-width: 62.5px;
-  max-height: 80px;
-  margin-left: 190px;
-  margin-top: 20px;
-}
-
-.socialmedia {
-  color: #000c33;
-  font-size: 8px;
-  padding:15px;
-  padding-right: 70px;
-  text-align: center
-}
-
-  .socialmedia ul {
-    list-style: none;
-    display:flex;
-
-    }
-
-    .socialmedia a {
-     display: block;
-    }
-
-    .socialmedia a img {
-      margin: 10px;
-      max-width: 62.5px;
-      max-height: 80px:
-      }
-
-.footer-bottom {
-  color: #000c33;
-  font-size: 11px;
-}
-
-  .footer-bottom ul {
-    padding-top: 5px;
-    list-style: none;
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-    .footer-bottom li {
-        display:inline;
-      }
-
-@media only screen and (max-width: -width: 1024px) {
-  .footer-bottom {
-    display:flex;
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .footer-bottom ul {
-    padding-top: 5px;
-    list-style: none;
-    display: flex;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-
-@media only screen and (max-width: 1024px) {
-
-  #hhl {
-    padding-left:0;
-    margin:0;
-  }
-}
-
-#spt {
-  padding-left: 350px;
-
-}
- @media only screen and (max-width: 1024px) {
-  #spt {
-    padding-left: 0;
-    margin-left: 0;
   }
 }
 
@@ -517,22 +263,410 @@ nav.pages {
 #menuToggle input:checked ~ ul {
   transform: none;
 }
- .categories button .img-container {
-      max-width: 400px;
-      max-height:400px;
-      padding: 20px;
-      background-color:white;
-      border-radius: 50%;
-      margin: 0;
-    }
-     .categories button img {
-      max-width: 80px;
+/* for center (categories)*/
+.center{
+  overflow-x: auto;
+  max-width: 100%;
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width:1024px){
+.center{
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+
+  }
+}
+
+.title {
+ text-align: center;
+
+}
+  .title h1 {
+    font-family: 'Baloo Tammudu 2', cursive;
+    padding-top: 40px;
+    font-size: 60px;
+    line-height: 155px;
+    text-align: center;
+    padding-bottom: 0;
+    margin: 10px;
+}
+
+@media screen and (max-width:440px){
+  .title h1 {
+    font-size: 40px;
+  }
+}
+
+  .title h2 {
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+  }
 
 
-    }
+.tab-btn{
+  display: flex;
+  flex-direction: column;
+  font-size:1.3em;
+  color:$primary-color;
+  padding:5px 10px;
+  transition:0.3s;
+  cursor:pointer;
+}
 
-button.anatomy{
-  max-width: 80px;
+span.tab-btn{
+  text-align-last: center;
+}
+
+.tab-btn input {
+  width:130px;
+  display: flex;
+  justify-content: center;
+  text-align:center;
+}
+
+
+@media screen and (max-width:440px){
+  .tab-btn input {
+  width:100px;
+  text-align:center;
+  justify-content: center;
+
+  }
+}
+@media screen and (max-width:440px){
+  span.tab-btn{
+
+    font-size:15px;
+  }
+}
+.tab-content{
+  color:$white;
+  padding:30px 15px;
+  display:none;
+  text-align:left;
+  line-height:1.5;
+  font-size:18px;
+  font-weight:300;
+  background:$primary-color;
+  transition:0.3s;
+}
+.card {
+  color:black;
+  background-color: white;
+  border-radius: 6px;
+  line-height: 15px;
+  margin:15px;
+  padding: 15px;
+  max-width: 350px;
+  height: 360px;
+
+}
+@media screen and (max-width:440px){
+  .card {
+    height:300px;
+  }
+}
+
+.card h2 {
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #FA4550;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .card p {
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 21px;
+    color: #000C33;
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: left;
+  }
+
+#active-content{
+  margin:15px;
+  padding-top: 25px;
+  max-width: 1612px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+
+  .tab-content {
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding-top: 25px;
+    max-width: 1612px;
+    color: $white;
+    padding: 30px 15px;
+    display: none;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 300;
+    background: $primary-color;
+    transition: 0.3s;
+
+  }
+}
+
+.tab-content:hover {
   color:red;
 }
 
+#active-tab {
+
+  color:red;
+  @include prefix(-webkit-,notice,300ms);
+  @include prefix(-moz-,notice,300ms);
+  animation-name:notice;
+  animation-duration:300ms;
+}
+
+#active-tab input {
+  width:130px;
+  text-align:center;
+}
+
+@media screen and (max-width:440px){
+  #active-tab input {
+    width:100px;
+  }
+}
+
+@media screen and (max-width:440px){
+  .tab-btn{
+    padding: 10px 20px;
+    text-align:center;
+  }
+  .center{
+    text-align:center;
+
+  }
+}
+
+/* for footer */
+footer {
+  max-width: 1920px;
+  margin-top:80px;
+  padding: 10px;
+  background-color: white;
+  margin-left: 0px;
+}
+
+.footer-top {
+  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 440px) {
+  .footer-top {
+    display: flex;
+  flex-direction: column;
+
+  }
+}
+
+.hhlogo3 {
+  position: absolute;
+  background: url(https://res.cloudinary.com/dleicsu2y/image/upload/v1603917308/hertility-task/HH_Logo_3_lpnw4p.png)no-repeat center center;
+  max-width: 42.04px;
+  height: 40.98px;
+  padding: 40px;
+  margin: 0;
+  left: 10px;
+}
+
+@media only screen and (max-width: 440px) {
+.hhlogo3 {
+  position:relative;
+  }
+}
+
+.pages {
+  color: #000c33;
+  display: flex;
+}
+
+nav.pages {
+  padding-left: 40px;
+}
+
+@media only screen and (max-width: 440px) {
+nav.pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  margin:0;
+  }
+}
+
+.pages ul {
+  list-style: none;
+  display:flex;
+  margin-left:0;
+  padding-left: 0;
+}
+
+  @media only screen and (max-width: 440px) {
+  .pages ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+  .pages ul a{
+    margin:10px;
+
+}
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+@media only screen and (max-width: 440px) {
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  }
+
+}
+.card-news {
+  color: #000c33;
+  font-size: 8px;
+  padding:15px;
+  padding-left: 70px;
+  padding-bottom: 25px;
+  padding-top:
+}
+@media only screen and (max-width: 440px) {
+  .card-news {
+    padding-left: 15px;
+  }
+}
+
+
+.card-news h1 {
+  font-family: 'Baloo Tammudu 2', cursive;
+  margin-bottom: 0;
+}
+
+.card-news input {
+  width: 250px;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 1px black;
+  padding-top: 25px;
+  color: #9FA6AE;
+}
+
+#submit img {
+  max-width: 62.5px;
+  max-height: 80px;
+  margin-left: 190px;
+  margin-top: 20px;
+}
+
+.socialmedia {
+  color: #000c33;
+  font-size: 8px;
+  padding:15px;
+  padding-right: 70px;
+  text-align: center
+}
+@media only screen and (max-width: 440px) {
+.socialmedia h1{
+  display:flex;
+  justify-content: center;
+  margin-left: 50px;
+ }
+}
+
+
+  .socialmedia ul {
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    }
+
+    .socialmedia a {
+     display: block;
+    }
+
+    .socialmedia a img {
+      margin: 10px;
+      max-width: 62.5px;
+      max-height: 80px:
+      }
+
+.footer-bottom {
+  color: #000c33;
+  font-size: 11px;
+}
+
+  .footer-bottom ul {
+    padding-top: 5px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+    .footer-bottom li {
+        display:inline;
+      }
+
+@media only screen and (max-width: -width: 1024px) {
+  .footer-bottom {
+    display:flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .footer-bottom ul {
+    padding-top: 5px;
+    list-style: none;
+    display: flex;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  #hhl {
+    padding-left:0;
+    margin:0;
+  }
+}
+
+#spt {
+  padding-left: 350px;
+
+}
+ @media only screen and (max-width: 1024px) {
+  #spt {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}

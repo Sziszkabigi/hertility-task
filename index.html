@@ -10,12 +10,15 @@
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-latest.js"></script>
-  <script src="index.js"></script>
+
+ <script src="https://kit.fontawesome.com/a46c089a54.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-<div class="container">
+
+
+ <div class="container">
+
   <header>
 
     <div class="logo"></div>
@@ -55,78 +58,251 @@
 
 
   </header>
-  <div>
   <div class="title"><h1> Herminology </h1>
 
   <h3> Terminology for her. </h3>
   </div>
 
-  <div class="categories">
+    <!--tab buttons-->
+    <div class="center">
 
+      <span  class="tab-btn" id="active-tab" data-tab="0"> <input id="1" type="image" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604674706/hertility-task/hertility-red_med32k.png" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604674706/hertility-task/hetility-white_n2vmcv.png" /> <br> Hertility Health </span>
 
+      <span class="tab-btn" data-tab="1"><input id="2" type="image" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604675249/hertility-task/anatomy-white_kj6b8e.png" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604675249/hertility-task/anatomy-red_jfqquz.png" /> <br>Anatomy</span>
 
-    <ul>
-      <li><a href=""> <div class="img-container"><img class="hertility" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604313011/hertility-task/Union_1_a0cjur.png" alt=""></div><p>Hertility Health</p></a></li>
-    </ul>
-    <ul>
-      <!--- test this section to change messages" -->
-      <li> <button class="anatomy"> <div class="img-container"><img class="anatomy-pic" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604268855/hertility-task/Vector_1_tlfcix.png" alt=""></div><p>Anatomy</p></button></li>
-    </ul>
-    <ul>
-      <li><a href=""> <div class="img-container"><img class="basics" src='https://res.cloudinary.com/dleicsu2y/image/upload/v1604312093/hertility-task/Group_2998_y4dvu3.png' alt=""></div><p>Basics</p></a></li>
-    </ul>
-    <ul>
-      <li><a href=""> <div class="img-container"><img class="conditioons" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604313469/hertility-task/Group_3089_t3xxqn.png" alt=""></div><p>Conditions</p></a></li>
-    </ul>
-     <ul>
-      <li><a href=""> <div class="img-container"><img class="contraception" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604313603/hertility-task/Group_1327_ga3qxo.png" alt="Contraception"></div><p>Contraception</p></a></li>
-    </ul>
-     <ul>
-      <li><a href=""> <div class="img-container"><img class="cycle" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604313603/hertility-task/Group_3090_uhyfjf.png" alt="Cycle"></div><p>Cycle</p></a></li>
-    </ul>
-     <ul>
-      <li><a href=""> <div class="img-container"><img class="genetics" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604313603/hertility-task/Group_xvzdao.png" alt="Genetics"></div><p>Genetics</p></a></li>
-    </ul>
-     <ul>
-      <li><a href=""><div class="img-container"> <img class="hormones" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604313603/hertility-task/Group_872_1_as8gbp.png" alt="Hormones"></div><p>Hormones</p></a></li>
-    </ul>
-     <ul>
-      <li><a href=""> <div class="img-container"><img class="symptoms" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1603985081/hertility-task/Category_Icon_8_aczqkd.png" alt="Symptoms"></div><p>Symptoms</p></a></li>
-    </ul>
-    <ul>
-      <li><a href=""> <div class="img-container"><img class="treatments" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1603985081/hertility-task/Group_3029_mxvzam.png" alt="Treatments"></div><p>Treatments</p></a></li>
-    </ul>
+      <span class="tab-btn" data-tab="2"><input type="image" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604319823/hertility-task/Category_Icon_10_aj18um.png" /> <br>Basics </span>
 
-  </div> <!-- categories -->
+      <span class="tab-btn" data-tab="3"><input type="image" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604319823/hertility-task/Category_Icon_10_aj18um.png" /> <br> Conditions </span>
 
-  <div class="term-cards">
+      <span class="tab-btn" data-tab="4"><input type="image" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604319823/hertility-task/Category_Icon_10_aj18um.png" /> <br>Contraception </span>
 
-    <div class="hertility-content">
+      <span class="tab-btn" data-tab="5"><input type="image" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604319823/hertility-task/Category_Icon_10_aj18um.png" /> <br>Cycle</span>
+
+      <span class="tab-btn" data-tab="6"><input type="image" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604319823/hertility-task/Category_Icon_10_aj18um.png" /> <br>Genetics</span>
+
+      <span class="tab-btn" data-tab="7"><input type="image" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604319823/hertility-task/Category_Icon_10_aj18um.png" /> <br>Hormones</span>
+
+      <span class="tab-btn" data-tab="8"><input type="image" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604319823/hertility-task/Category_Icon_10_aj18um.png" /> <br> Symptoms</span>
+
+      <span class="tab-btn" data-tab="9"><input type="image" src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604319823/hertility-task/Category_Icon_10_aj18um.png" /> <br>Treatments </span>
+    </div>
+
+    <!--content of tabs-->
+    <div class="tab-content" id="active-content" data-tab="0">
       <div class="card" id="card1">
         <h2> Hertility </h2>
         <p> We provide you with access to information about your reproductive health whilst guiding you through your fertility journey, from couch to clinic. </p>
-      </div>
 
-       <div class="card" id="card2">
+      </div>
+     <div class="card" id="card2">
         <h2> ReProductive </h2>
         <p> When you are productive with your reproductive health, and make informed decisions when it matters, not when it’s too late.</p>
       </div>
-
        <div class="card" id="card3">
         <h2> AFAB </h2>
         <p> An acronym for “assigned female at birth”. This term refers to a person who was born with female reproductive organs but does not identify as this gender.</p>
       </div>
-    </div>
-<!-- test anatomy button change the html messages -->
-     <div class="anatomy-content">
-      <div class="card" id="card1">
-        <h2> Anatomy content </h2>
-        <p> When you are productive with your reproductive health, and make informed decisions when it matters, not when it’s too late.</p>
+
+    </div><!--content of tabs-->
+
+
+  <!--content of tabs-->
+    <div class="tab-content" data-tab="1">
+
+       <div class="card" id="card1">
+        <h2> Cervix </h2>
+        <p> The narrow, cylinder-shaped passage that forms the lower end of your uterus, and it is this area of tissue that separates the vagina from the rest of your uterus. </p>
       </div>
-    </div>
-  </div> <!-- term-cards -->
+
+        <div class="card">
+        <h2> Cervical Fluid/Mucus </h2>
+        <p> The fluid secreted by the cervix. It has two main roles; to prevent things from entering the uterus through the cervix, and to nourish and transport sperm through the cervix to the uterus. Throughout your cycle your mucus changes, due to fluctuating hormone levels, and can highlight how fertile you are.</p>
+      </div>
+
+        <div class="card" >
+        <h2> Endometrium </h2>
+        <p> The inner lining of your uterus, which thickens throughout your cycle and then sheds as you period.  </p>
+      </div>
+
+       <div class="card" >
+        <h2> Fallopian Tube </h2>
+        <p> The path your egg follows once released from the ovary during ovulation, to the uterus, where it awaits fertilisation. </p>
+      </div>
+
+       <div class="card" >
+        <h2> Ovary </h2>
+        <p> The almond-sized gland that sits at the end of your fallopian tubes. Most are born with two ovaries, that produce and house your eggs until they are mature enough to leave in search of a sperm - AKA ovulation.⁠ Ovaries also produce primary sex hormones, oestrogen and progesterone.  </p>
+      </div>
+
+       <div class="card" >
+        <h2> Pelvis </h2>
+        <p> The bony structure located between the abdomen and legs, which supports the intestines and houses your bladder and reproductive system. Your pelvis is usually broader and wider to give you the ability to undergo pregnancy and childbirth.
+ </p>
+      </div>
+
+       <div class="card" >
+        <h2> Thyroid </h2>
+        <p> A butterfly-shaped gland located at the front of your throat which acts as the conductor of your hormonal orchestra. It regulates your metabolism, heart and digestive function, growth and development and temperature.  </p>
+      </div>
+
+       <div class="card" >
+        <h2> Uterus </h2>
+        <p>  A muscular sac located between the bladder and the rectum. Throughout your monthly cycle, the inner lining of the uterus thickens with blood, in preparation for a fertilised egg to implant itself.
+
+</p>
+      </div>
+
+       <div class="card" >
+        <h2> Vagina </h2>
+        <p> The muscular canal that connects the vulva (the outer parts of your genitals) to the uterus. ⁠⁠
+
+ </p>
+      </div>
+
+
+      <!--content of tabs-->
 </div>
-  <footer>
+
+
+
+    <div class="tab-content" data-tab="2">
+
+      <div class="card" id="card1">
+        <h2> Menstruation </h2>
+        <p> More commonly known as your period, this is the normal vaginal bleeding that takes place as part of your monthly cycle.</p>
+      </div>
+
+    <div class="card" >
+        <h2> Microbiome </h2>
+        <p> The genetic material of all the microbes that live on and inside the human body, such as bacteria, fungi, protozoa and viruses. Some microbes help our bodily functions, like the good bacteria in our gut. The bad guys that can cause diseases are called pathogens. Studies show that some of the pathogens that cause STIs such as chlamydia and gonorrhoea can lead to infertility. </p>
+      </div>
+
+    <div class="card" >
+        <h2> Ovarian Reserve </h2>
+        <p> This refers to the number of eggs you have remaining in your ovaries. This number declines with age until you reach menopause. You each have a unique fertility curve, so everyone's ovarian reserve changes at a different rate. </p>
+      </div>
+
+    <div class="card" >
+        <h2> Papanicolaou Test </h2>
+        <p> AKA a pap smear is the test that involves collecting cells from your cervix to help detect cervical cancer or precancerous cells.   </p>
+      </div>
+
+      </div>
+   <div class="tab-content" data-tab="3">
+
+       <div class="card" >
+        <h2> Adenomyosis </h2>
+        <p> A condition in which the inner lining of the uterus breaks through the muscle wall. Its symptoms can include menstrual cramps, lower abdominal pain, bloating and heavy periods.  </p>
+      </div>
+
+      <div class="card" >
+        <h2> Endometriosis  </h2>
+        <p> A chronic condition where tissue similar to the lining of a uterus, decides to go wandering and grow in places outside of the uterus, such as the ovaries and fallopian tubes, causing pain. </p>
+      </div>
+
+      <div class="card" >
+        <h2> Uterine Fibroids </h2>
+        <p> Non-cancerous growths that grow in or around the uterus. As many as 1 in 3 will develop fibroids.  </p>
+      </div>
+
+      <div class="card" >
+        <h2> Hormonal Acne </h2>
+        <p>  Acne caused by a fluctuation of your hormones. Common during puberty, but can develop at any age.</p>
+      </div>
+
+      <div class="card" >
+        <h2>  Hypothalamic Amenorrhea </h2>
+        <p> A condition in which menstruation stops for several months due to a problem involving the hypothalamus. The hypothalamus is in the centre of the brain and controls reproduction. This is typically linked with stress, weight loss and/or excessive physical exercise.
+ </p>
+      </div>
+
+      <div class="card" >
+        <h2> Hypothyroidism (Underactive Thyroid) </h2>
+        <p> When the thyroid gland doesn’t produce enough hormones. Symptoms include: tiredness, weight gain, depression, being sensitive to cold, dry skin and hair and muscle aches.  Thyroid problems can also affect your fertility.
+ </p>
+      </div>
+
+      <div class="card" >
+        <h2> PCOS </h2>
+        <p> Polycystic Ovarian Syndrome (PCOS) is a common endocrine disorder affecting 1 in 5 of reproductive age. Named after the appearance of the tiny fluid-filled follicular sacs in the ovaries, that house your immature eggs. Thought to be caused by an increase in androgens and a sensitivity to insulin.
+ </p>
+      </div>
+
+      <div class="card" >
+        <h2>  Premenstrual Dysphoric Disorder (PMDD)</h2>
+        <p>  A severe form of PMS that can include symptoms such as depression, anxiety and even suicidal thoughts. It affects around 5-10% of those who menstruate.
+
+</p>
+      </div>
+
+      <div class="card" >
+        <h2> Premenstrual Syndrome (PMS) </h2>
+        <p>  The name given to the symptoms you experience in the weeks leading up to your period. Linked to the changes in your hormones during the menstrual cycle the symptoms of PMS include: feeling anxious/upset/irritable, fatigue or insomnia, bloating and abdominal pain, spots and also breast tenderness. However, these symptoms differ for each person.
+</p>
+      </div>
+
+      <div class="card" >
+        <h2> Recurrent Miscarriage </h2>
+        <p>  Defined as 3 or more consecutive pregnancy losses and affects around 1% of couples trying to conceive.
+</p>
+      </div>
+
+   </div>
+
+    <div class="tab-content" data-tab="4">
+
+       <div class="card" >
+        <h2>  </h2>
+        <p>  </p>
+      </div>
+     </div>
+
+       <div class="tab-content" data-tab="5">
+
+       <div class="card" >
+        <h2> Cervix </h2>
+        <p> The narrow, cylinder-shaped passage that forms the lower end of your uterus, and it is this area of tissue that separates the vagina from the rest of your uterus. </p>
+      </div>
+   </div>
+
+      <div class="tab-content" data-tab="6">
+
+       <div class="card" >
+        <h2> Cervix </h2>
+        <p> The narrow, cylinder-shaped passage that forms the lower end of your uterus, and it is this area of tissue that separates the vagina from the rest of your uterus. </p>
+      </div>
+   </div>
+      <div class="tab-content" data-tab="7">
+
+       <div class="card" >
+        <h2> Cervix </h2>
+        <p> The narrow, cylinder-shaped passage that forms the lower end of your uterus, and it is this area of tissue that separates the vagina from the rest of your uterus. </p>
+      </div>
+   </div>
+      <div class="tab-content" data-tab="8">
+
+       <div class="card" >
+        <h2> Cervix </h2>
+        <p> The narrow, cylinder-shaped passage that forms the lower end of your uterus, and it is this area of tissue that separates the vagina from the rest of your uterus. </p>
+      </div>
+   </div>
+      <div class="tab-content" data-tab="9">
+
+       <div class="card" >
+        <h2> Cervix </h2>
+        <p> The narrow, cylinder-shaped passage that forms the lower end of your uterus, and it is this area of tissue that separates the vagina from the rest of your uterus. </p>
+      </div>
+   </div>
+      <div class="tab-content" data-tab="10">
+
+       <div class="card" >
+        <h2> Cervix </h2>
+        <p> The narrow, cylinder-shaped passage that forms the lower end of your uterus, and it is this area of tissue that separates the vagina from the rest of your uterus. </p>
+      </div>
+   </div>
+
+    </div>
+    <footer>
 
   <div class="footer-top">
 
@@ -158,7 +334,7 @@
       <h1>Follow us!</h1>
       <ul>
         <li><a id="facebook" href="#" target="_blank"> <img src="https://res.cloudinary.com/dleicsu2y/image/upload/v1603982286/hertility-task/Facebook_u4pk3g.png" alt=""></a></li>
-        <li><a id="instagramm" href="#" target="_blank"> <img src="https://res.cloudinary.com/dleicsu2y/image/upload/v1603982286/hertility-task/Insta_feknc1.png" alt=""></a></li>
+        <li><a id="instagramm" href="#" target="_blank"> <img src="https://res.cloudinary.com/dleicsu2y/image/upload/v1604590000/hertility-task/Insta_dhngvz.png" alt=""></a></li>
         <li><a id="facebook" href="#" target="_blank"> <img src="https://res.cloudinary.com/dleicsu2y/image/upload/v1603982286/hertility-task/Twitter_l7ap3m.png" alt=""></a></li>
       </ul>
     </div> <!-- socialmedia-->
@@ -179,6 +355,8 @@
 
   </footer>
 
-</div> <!-- container -->
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
