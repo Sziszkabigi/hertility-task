@@ -282,6 +282,9 @@ nav ul {
 
   }
 }
+.center img{
+  max-width: 150px;
+}
 
 @media screen and (max-width:1024px){
     .center span {
@@ -377,6 +380,12 @@ span.tab-btn{
 }
 @media screen and (max-width:440px){
   .card {
+
+    height:300px;
+  }
+}
+@media screen and (max-width:440px){
+  .card {
     height:300px;
   }
 }
@@ -450,9 +459,13 @@ span.tab-btn{
   width:130px;
   text-align:center;
 }
+#active-tab  img {
+  width:130px;
+
+}
 
 @media screen and (max-width:440px){
-  #active-tab input {
+  #active-tab  img {
     width:100px;
   }
 }
@@ -464,6 +477,19 @@ span.tab-btn{
   }
   .center{
     text-align:center;
+
+  }
+}
+
+@media screen and (max-width:440px){
+#active-content {
+
+}
+}
+@media screen and (max-width:440px){
+#active-content .tab-content{
+
+  overflow-x: scroll;
 
   }
 }
