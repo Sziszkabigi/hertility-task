@@ -278,7 +278,15 @@ nav ul {
 .center{
   flex-wrap: nowrap;
   overflow-x: scroll;
+  justify-content: flex-start;
 
+  }
+}
+
+@media screen and (max-width:1024px){
+    .center span {
+
+    font-size: 20px;
   }
 }
 
