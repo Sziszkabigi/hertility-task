@@ -27,7 +27,11 @@ $white:#fff;*/
 body{
   margin: 0;
   padding: 0;
-  background: url('https://res.cloudinary.com/dleicsu2y/image/upload/c_scale,w_1802/v1603998053/hertility-task/Background_1_ikfzfk.png') no-repeat center center/cover;
+  background: url('https://res.cloudinary.com/dleicsu2y/image/upload/c_scale,w_1802/v1603998053/hertility-task/Background_1_ikfzfk.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   background-color: #000D33;
   color: #FFFFFF;
   font-family: sofia-pro, sans-serif;
@@ -283,7 +287,7 @@ nav ul {
   }
 }
 .center img{
-  max-width: 150px;
+  max-width: 130px;
 }
 
 @media screen and (max-width:1024px){
